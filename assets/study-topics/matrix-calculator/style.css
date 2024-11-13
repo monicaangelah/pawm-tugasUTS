@@ -1,0 +1,147 @@
+/* Mengatur tampilan dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f9e79f, #fefefe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container utama */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    transition: max-width 0.3s;
+    border: 3px solid #3B3C59;
+}
+
+/* Judul utama */
+.container h1 {
+    color: #3B3C59; /* Warna untuk "Matrix Calculator" */
+}
+
+/* Subjudul */
+.container p {
+    color: #3B3C59; /* Warna untuk "Select the matrix size and enter the matrix elements." */
+}
+
+/* Label pemilihan ukuran matriks */
+.matrix-size-selector label {
+    color: #3B3C59; /* Warna untuk "Select Matrix Size:" */
+}
+
+/* Ukuran lebih besar untuk matriks 3x3 */
+.larger-container {
+    max-width: 700px;
+}
+
+/* Container matriks */
+.matrix-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 20px;
+    transition: gap 0.3s;
+}
+
+.larger-gap {
+    gap: 60px;
+}
+
+.matrix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Tombol operasi */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3B3C59;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffd803;
+}
+
+/* Hasil operasi */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3B3C59;
+}
+
+/* Responsive untuk tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .matrix-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsive untuk smartphone (max-width: 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .matrix-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input {
+        width: 45px; /* Ukuran input lebih kecil */
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Calculator</h1>
+        <p>Select the matrix size and enter the matrix elements.</p>
+
+        <div class="matrix-size-selector">
+            <label>Select Matrix Size:</label>
+            <select id="matrixSize" onchange="generateMatrixInputs()">
+                <option value="2">2x2</option>
+                <option value="3">3x3</option>
+            </select>
+        </div>
+
+        <div class="matrix-container">
+            <div id="matrixA" class="matrix">
+                <h3>Matriks A</h3>
+            </div>
+
+            <div id="matrixB" class="matrix">
+                <h3>Matriks B</h3>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="tambahMatriks()">Addition</button>
+            <button onclick="kaliMatriks()">Multiplication</button>
+        </div>
+
+        <div id="hasil" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

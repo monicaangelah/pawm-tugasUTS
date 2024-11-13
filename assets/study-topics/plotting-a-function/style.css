@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F4;
+  background: linear-gradient(to bottom, #f9e79f, #fefefe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #3B3C59;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #3B3C59;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Menambahkan jarak antar elemen */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#functionInput {
+  flex: 1; /* Membuat input menyesuaikan sisa ruang */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #3B3C59;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3B3C59;
+  color: #FFF8F4;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  transition: background 0.3s;
+  white-space: nowrap; /* Mencegah teks button terpotong */
+}
+
+button:hover {
+  background-color: #ffd803;
+}
+
+.operator-description {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #3B3C59;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Membatasi ukuran canvas agar tidak keluar dari kontainer */
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100%; /* Agar canvas mengikuti lebar kontainer */
+  height: auto; /* Memastikan aspek rasio tetap */
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* Media Queries untuk tablet dan ponsel */
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+
+  .input-container {
+      flex-direction: column; /* Susun input dan tombol secara vertikal */
+  }
+
+  button {
+      width: 100%; /* Tombol memenuhi lebar kontainer */
+  }
+}

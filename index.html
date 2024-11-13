@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtual Lab Monica">
+    <title>Virtual Lab Monica</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>
+                Mathoria
+            </h1>
+            <button id="menu-toggle">☰</button>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h2 class="home-title">
+                <span class="greeting">Selamat Datang di</span>
+                <span class="name">Mathoria</span>
+                <br/>
+                <span class="role">Platform Belajar Matematika Untukmu!</span>
+            </h2>
+            <p class="home-description">
+                Tempat seru buat kamu yang mau belajar Matematika dengan lebih mudah!
+                <br/>
+                Mathoria menyajikan berbagai materi <strong>Matematika TPB ITB</strong> dengan lebih
+                <br/>
+                sederhana dan mudah dipahami, <span class="desc-decoration">jadi ngga perlu pusing-pusing lagi!</span>
+            </p>
+            <div class="cta-wrapper">
+                <a href="#topics" class="cta-button">
+                    Mulai Belajar!
+                </a>
+            </div>
+        </div>
+        <div class="study-image"></div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics">
+        <h2>Mau belajar apa hari ini?</h2>
+        <div class="topics-grid">
+            <a href="assets/study-topics/plotting-a-function/index.html" class="topics-wrapper">
+                <img src="assets/web-purposes/graph.png" alt="Graph Plot">
+                <span class="topics-title">Plotting a Function</span>
+            </a>
+            <a href="assets/study-topics/matrix-calculator/index.html" class="topics-wrapper">
+                <img src="assets/web-purposes/matrix.png" alt="Matrix Calculator">
+                <span class="topics-title">Matrix Calculator</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Kenali kami lebih lanjut!</h2>
+        <div class="map-content">
+            <div class="image-grid">
+                <div class="image-wrapper"><img src="assets/web-purposes/peta.png" alt="Peta Indonesia"></div>
+                <div class="map-description">
+                    <h2><span class="highlight">10.000+ pelajar</span> di Indonesia telah menggunakan Mathoria</h2>
+                    <p>Jangan sampai ketinggalan!</p>
+                    <a href="#topics" class="cta-button">
+                        Mulai Belajar!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Aside -->
+    <aside id="contact">
+        <h2>Any Question?</h2>
+        <p>Jangan ragu untuk hubungi kami!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/monicaangela_" target="_blank" rel="noopener noreferrer">
+                <img src="assets/web-purposes/instagram.webp" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/monica-angela-hartono/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/web-purposes/linkedin.png" alt="Linkedin" class="social-icon">
+            </a>
+            <a href="mailto:monicaangelahartono@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/web-purposes/gmail.png" alt="Gmail" class="social-icon">
+            </a>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&#169; 2024 Monica Angela Hartono - 18222078</p>
+    </footer>
+
+    <!-- Link to Javascript -->
+     <script src="script.js"></script>
+</body>
+</html>

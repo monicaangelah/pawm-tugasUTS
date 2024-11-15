@@ -32,6 +32,8 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
+app.options('*', cors()); // Mengizinkan semua preflight requests
+
 // Middleware untuk parsing JSON
 app.use(express.json());
 

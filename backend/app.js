@@ -27,12 +27,10 @@ if (!MONGO_URI) {
 
 // Mengaktifkan middleware cors dengan konfigurasi yang fleksibel
 app.use(cors({
-  origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://mathoria.vercel.app'],
+  origin: ['http://localhost:5500', 'http://127.0.0.1:5500'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
-app.options('*', cors()); // Mengizinkan semua preflight requests
 
 // Middleware untuk parsing JSON
 app.use(express.json());
@@ -49,18 +47,10 @@ mongoose.connect(MONGO_URI)
 app.use('/api/auth', authRoutes);
 app.use('/api', protectedRoutes);
 
-// // Jalankan server
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}`);
-// });
+// Jalankan server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 // Ekspor aplikasi Express sebagai default
-app.get('/', (req, res) => {
-  res.send('Backend server is running');
-});
-
-app.all('*', (req, res) => {
-  res.status(404).json({ message: 'Endpoint not found' });
-});
-
 export default app;

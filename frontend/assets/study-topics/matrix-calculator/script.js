@@ -129,7 +129,7 @@ function simpanHasilSimulasi(topic, inputData, resultData) {
         }
     }, null, 2)); // Menggunakan `null, 2` untuk format JSON yang lebih mudah dibaca
 
-    fetch('https://mathoria-backend.vercel.app/api/simulations/save', {
+    fetch('http://localhost:3000/api/simulations/save', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

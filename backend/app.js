@@ -8,8 +8,8 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 
 // Import rute dari folder routes
-import authRoutes from './routes/auth.js';
-import protectedRoutes from './routes/protected.js';
+import authRoutes from './api/auth.js';
+import protectedRoutes from './api/protected.js';
 
 // Import model Simulation
 import Simulation from './models/Simulation.js';

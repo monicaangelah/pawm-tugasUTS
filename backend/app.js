@@ -53,4 +53,12 @@ app.use('/api', protectedRoutes);
 // });
 
 // Ekspor aplikasi Express sebagai default
+app.get('/', (req, res) => {
+  res.send('Backend server is running');
+});
+
+app.all('*', (req, res) => {
+  res.status(404).json({ message: 'Endpoint not found' });
+});
+
 export default app;

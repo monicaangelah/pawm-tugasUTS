@@ -27,14 +27,14 @@ https://mathoria-backend.vercel.app
 
 ## Repository Link
 ```
-https://github.com/monicaangelah/pawm-tugas1-frontend.git
+https://github.com/monicaangelah/pawm-tugasUTS.git
 ```
 
 ## How to Run Project on Your Local?
 *notes* : Hosting FrontEnd dan BackEnd pada Vercel dalam pengembangan Virtual Lab Mathoria tidak sepenuhnya berjalan mulus. Terdapat kendala saat melakukan hosting pada BackEnd, yaitu server tidak terbaca sehingga tampilan menjadi 404: NOT_FOUND. Karena gagal dalam melakukan hosting BackEnd, hosting FrontEnd pun terkena imbasnya. Ketika menjalankan FrontEnd Hosting Link, tampilan hanya sampai register dan login, tidak bisa masuk ke main page dan melakukan simulasi. Hal ini terjadi karena antara FrontEnd dan BackEnd belum saling terhubung. Karena permasalahan dalam hosting ini, saya memberikan cara lain untuk mencoba website dalam localhost masing-masing.
 1. Clone GitHub Repository
 ```
-https://github.com/monicaangelah/pawm-tugas1-frontend.git
+https://github.com/monicaangelah/pawm-tugasUTS.git
 ```
 2. Jalankan Proyek pada Direktori Backend
 ```

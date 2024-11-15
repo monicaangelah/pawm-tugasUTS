@@ -1,0 +1,60 @@
+<!-- register page biar bisa dideploy di vercel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Mathoria</title>
+    <!-- Update path untuk styles dan font -->
+    <link rel="stylesheet" href="auth/auth-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="main-background">
+    <!-- Wrapper untuk teks dan kotak register -->
+    <div class="auth-wrapper">
+        <h1 class="welcome-text">Welcome to Mathoria!</h1>
+        <div class="auth-container auth-box-style">
+            <h2>Create New Account</h2>
+            <form id="register-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" class="cta-button">Register</button>
+            </form>
+            <p>Already have an account? <a href="auth/login.html">Login here</a></p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('register-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+    
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+    
+            try {
+                const response = await fetch('http://localhost:3000/api/auth/register', { // Update dengan URL lengkap
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password }),
+                });
+    
+                if (response.ok) {
+                    alert('Registrasi berhasil! Silakan login.');
+                    window.location.href = 'auth/login.html';
+                } else {
+                    const errorData = await response.json();
+                    alert(errorData.error || 'Registrasi gagal. Coba lagi.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Terjadi kesalahan. Coba lagi.');
+            }
+        });
+    </script>
+    
+</body>
+</html>

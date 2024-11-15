@@ -1,0 +1,118 @@
+/* Background untuk halaman */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f9e79f, #fefefe);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Background untuk halaman Register dan Login */
+.main-background {
+    background-color: #FFF8F4; /* Warna background */
+    font-family: 'Poppins', sans-serif; /* Font Poppins */
+}
+
+/* Auth Box Styling untuk Border dan Bayangan */
+.auth-box-style {
+    width: 400px;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    background-color: #FFF;
+    border: 2px solid #3B3C59; /* Warna border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow untuk efek */
+}
+
+/* Auth Container */
+.auth-container {
+    background-color: #ffffff;
+    border: 3px solid #4A4A4A;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #3B3C59;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-container label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #3B3C59;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.auth-container .cta-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3B3C59;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-container .cta-button:hover {
+    background-color: #ffd803;
+}
+
+.auth-container p {
+    color: #3B3C59;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-container a {
+    color: #3B3C59;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk teks Welcome */
+.welcome-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3B3C59;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Wrapper untuk menyatukan teks dan kotak */
+.auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
